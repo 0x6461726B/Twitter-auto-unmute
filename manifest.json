@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Auto Unmute",
+  "version": "1.0",
+  "description": "Automatically unmutes Twitter videos.",
+  "permissions": ["activeTab", "storage"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }],
+    "action": {
+      "default_popup": "popup.html"
+    }
+}
